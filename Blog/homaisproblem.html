@@ -27,24 +27,27 @@
 			            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 			        }
 			    };
-			    if(isMobile.any()){
-				    document.getElementById("riddle").innerHTML="R";
-					var script = document.createElement('script');
-					script.onload = function () {
-					    console.log("Welcome, mobile users of the world. We're preparing the mobile site.")
-					};
-					script.src = '/support/mobile_reader.js';
-					document.head.appendChild(script); 	
-					
-					var fileref = document.createElement("link");
-					fileref.rel = "stylesheet";
-					fileref.type = "text/css";
-					fileref.href = "/support/mobile_style.css";
-					document.getElementsByTagName("head")[0].appendChild(fileref)		    
-					}
+			    evaluateClient(){
+				    if(isMobile.any()){
+					    document.getElementById("riddle").innerHTML="R";
+						var script = document.createElement('script');
+						script.onload = function () {
+						    console.log("Welcome, mobile users of the world. We're preparing the mobile site.")
+						};
+						script.src = '/support/mobile_reader.js';
+						document.head.appendChild(script); 	
+						
+						var fileref = document.createElement("link");
+						fileref.rel = "stylesheet";
+						fileref.type = "text/css";
+						fileref.href = "/support/mobile_style.css";
+						document.getElementsByTagName("head")[0].appendChild(fileref)		    
+						}
+						unleash_the_kraken()
+				}
 		</script>
 	</head>
-	<body onload="unleash_the_kraken()">
+	<body onload="evaluateClient()">
 		<div id="world">
 			<div id="tree">
 				<!-- The Sidebar. This handy creature contains the article title, author, and the WhistlingTree logo, which acts as a link to 				the home page-->
