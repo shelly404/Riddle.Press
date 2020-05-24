@@ -1,4 +1,4 @@
-function unleash_the_kraken(){
+function unleash_the_mobile_kraken(){
 				full_text = document.getElementById("FULL_CONTENT").innerHTML;
 				full_text = full_text.replace(/[\r\n]+/g," <br> ").replace(new RegExp('<h1>', 'g')," <h1> ").replace(new RegExp('</h1>', 'g')," </h1> ").replace(new RegExp('<p>', 'g')," </br> ").replace(new RegExp('</p>', 'g'),"");
 				words = full_text.split(" ");
