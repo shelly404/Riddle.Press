@@ -31,18 +31,18 @@
 				    if(isMobile.any()){
 					    document.getElementById("riddle").innerHTML="R";
 						var script = document.createElement('script');
-						script.onload = function () {
-						    console.log("Welcome, mobile users of the world. We're preparing the mobile site.")
-						};
 						script.src = '/support/mobile_reader.js';
 						document.head.appendChild(script); 	
+						script.onload = function () {
+						    console.log("Welcome, mobile users of the world. We're preparing the mobile site.")
+						    unleash_the_mobile_kraken()
+						};
 						
 						var fileref = document.createElement("link");
 						fileref.rel = "stylesheet";
 						fileref.type = "text/css";
 						fileref.href = "/support/mobile_style.css";
 						document.getElementsByTagName("head")[0].appendChild(fileref)		 
-						unleash_the_mobile_kraken()
 
 						}
 						else{
