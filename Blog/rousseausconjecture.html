@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--Icons made by "https://www.flaticon.com/authors/smashicons" Smashicons from https://www.flaticon.com/.-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>The Homais Problem</title>
+		<link rel="stylesheet" type="text/css" href="/support/reader.css">
+		<script src="/support/reader.js"></script>
+		<script>
+			    var isMobile = {
+			        Android: function() {
+			            return navigator.userAgent.match(/Android/i);
+			        },
+			        BlackBerry: function() {
+			            return navigator.userAgent.match(/BlackBerry/i);
+			        },
+			        iOS: function() {
+			            return navigator.userAgent.match(/iPhone|iPod/i);
+			        },
+			        Opera: function() {
+			            return navigator.userAgent.match(/Opera Mini/i);
+			        },
+			        Windows: function() {
+			            return navigator.userAgent.match(/IEMobile/i);
+			        },
+			        any: function() {
+			            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+			        }
+			    };
+			    function evaluateClient(){
+				    if(isMobile.any()){
+					    document.getElementById("riddle").innerHTML="R";
+					    document.getElementById("NUM_right").style.display="none";
+						var script = document.createElement('script');
+						script.src = '/support/mobile_reader.js';
+						document.head.appendChild(script); 	
+						script.onload = function () {
+						    console.log("Welcome, mobile users of the world. We're preparing the mobile site.")
+						    unleash_the_mobile_kraken()
+						};
+						
+						var fileref = document.createElement("link");
+						fileref.rel = "stylesheet";
+						fileref.type = "text/css";
+						fileref.href = "/support/mobile_style.css";
+						document.getElementsByTagName("head")[0].appendChild(fileref)		 
+
+						}
+						else{
+							unleash_the_kraken()
+						}
+						
+				}
+		</script>
+	</head>
+	<body onload="evaluateClient()">
+		<div id="world">
+			<div id="tree">
+				<!-- The Sidebar. This handy creature contains the article title, author, and the WhistlingTree logo, which acts as a link to 				the home page-->
+			<div id="riddle" onclick="document.location='https://riddle.press'"> Riddle </div>				
+<!-- -------------------------------------------------------------------------------------------------------------------------- -->
+<!-- Remember to add the title and the author ----------------------------------------------------------------------------				 -->
+				<hr>
+				<div id='title_blob'>
+					<div id="title">The Homais Problem</div> 
+					<div id="author">Essays on Weighty Works</div>
+				</div>
+				<hr>
+				
+				
+			</div>
+			<div id="reader">
+								
+			</div>
+			
+			<!-- Full Content goes in the following div:-->
+			<div id="FULL_CONTENT" style="display:none">
+<!--
+===========================================================================================================================================
+--------------------------------------------------- FULL CONTENT GOES HERE! ---------------------------------------------------------------
+-->
+<h1>Rousseau’s Conjecture</h1>
+
+<p>In the 17th century, Enlightenment-era Europe took delivery of a gift from Ancient Greece. Its hulking promise had towered above them for a thousand years, as they traversed medieval life in the shadow of an ancient people whose arts and sciences they could not hope to rival. But now, as Europe’s arts flourished, as books proliferated and the rising middle class came to expect newspapers and croissants — now that the <em>luxury</em> of the ancient world offered itself to Europe, a fiery debate commenced over whether this gift, the path towards luxury, was after all in Europe’s best interest. Did luxury prioritize the sensual gratification of the rich over the basic needs of the poor and hungry? Did it bewitch men and women with a host of unnecessary desires, while masking the truly important aspects of life? Or was luxury a spur to industry that motivated the otherwise idle while encouraging sociability? There was scarce an Enlightenment intellectual who didn’t lend his pen to one side of this raging battle, but one voice among them rose above all others in its eloquence and by the novel power of its ideology. Jean Jacques Rousseau looked beyond the Trojan horse and saw deeper powers at play. While his contemporaries debated how man should shape society, Rousseau conjectured that man <em>cannot</em> shape society: society shapes man. To Rousseau, luxury was but the latest wave from an indifferent tide of societal evolution into whose rise and fall, enlightenment and collapse, humans are inseparably chained.</p>
+
+<h2> The Question of Luxury </h2>
+<p>To understand the deviance of Rousseau’s discourses, one needs to return to the discourse on luxury which preceded them. The caricatured outlines of this debate can be drawn between the Archbishop Fenelon and Voltaire, both Frenchmen writing in the early-to-middle 18th century, one of whom was mortified by the steady advance of luxury, and one of whom was enchanted. The Archbishop Fenelon saw luxury only as a “vice which… is extolled as a virtue.” By praising fine wines and other such “superfluities” as in “good taste, the perfection of the arts, the politeness of a nation,” Fenelon believed nothing was achieved but “enervating the rich by the refinements” while oppressing the poorer class charged with producing these luxuries. “Men want to have everything and render themselves unhappy by desiring the superfluous,” Fenelon writes, “if they would live in a simple manner, and be content with satisfying their real needs, we should see plenty, joy, peace, and union reign everywhere.”<sup><a id="ffn1" href="#fn1" class="footnote">1</a></sup> </p>
+
+<p>Voltaire rebutted these charges against the arts in a fitting manner, with poetry. In “The Worldling”, he addresses those of Fenelon’s ilk directly: “Religionists may rail in vain; I own, I like this age profane; I like the pleasures of the court; I love the arts of every sort.” Adam and Eve, Voltaire jests, might have had the first paradise, but “Eve, first formed by hand divine, never so much as tasted wine. Do you our ancestors admire, because they wore no rich attire?” Voltaire evidently would imagine his own life much diminished without the superfluities Fenelon condemns.<sup><a id="ffn2" href="#fn2" class="footnote">2</a></sup> “In the state of simple nature, [man is] a helpless, wretched creature” who is moreover compelled by little more “than downright animal instinct.” How did they pass their time with nothing but the ground to lie on, and nothing but the trees to see? In the cities, Voltaire contends, these rough human edges are filed away by “the arts that charm the human mind.” Statues, painting, fine cooking — through all of these “The following day new joy inspires, it brings new pleasures and desires… I’m not so critically nice,” Voltaire concludes, “Paris to me’s a paradise.”<sup><a id="ffn3" href="#fn3" class="footnote">3</a></sup> </p>
+
+<p>One of the more nuanced voices to enter the debate on luxury was David Hume, who stepped backwards from the fray between Voltaire, Fenelon, and company to incorporate the entire field of debate within a single ideology. He acknowledges the Archbishop Fenelon’s concerns about the moral rectitude of luxury. “The bounds between the virtue and the vice cannot here be exactly fixed, more than in other moral subjects.” Certainly, Hume concurs that “to be entirely occupied with the luxury of the table, for instance, without the pleasures of ambition, study, or conversation, is a mark of stupidity.” But Hume contends that these indulgences “are only vices when they are pursued at the expense of some virtue,” and if “a man reserve time sufficient for all laudable pursuits… he is free from every shadow of blame or reproach.” Indeed, here Hume concurs with Voltaire that “in times when industry and the arts flourish, men are kept in perpetual occupation, and enjoy, as their reward, the occupation itself, as well as those pleasures which are the fruit of their labor. The mind acquires new vigor.” Luxury, per Hume’s definition, is “great refinement in the gratification of the senses.” Pursued properly, luxury means <em>refinement</em> of the self. Operas and newspapers sharpen the mind, and stimulate social discourse by providing a “fund of conversation.” As the refinements of the arts and sciences (inevitably) increase, Hume declares it “impossible but that (we) must feel an increase in humanity.” <sup><a id="ffn4" href="#fn4" class="footnote">4</a></sup></p>
+
+<p>Hume opened the Trojan horse and found novels and newspapers, strewn among croissants and bottles of wine. He counseled both sides of the debate on luxury that, with proper restraint, every one of these gifts was a <em>tool</em>: a tool for men and women to refine themselves, to “increase their humanity,” and to further themselves along the road of progress. There may be hiccups in this journey; there may be battles to be fought over <em>which</em> tools are beneficial, but Hume expresses hope that humans can discern the best way forward. Hume left the subject of luxury, as he often did, seeming as though no more could possibly be said.</p>
+<h2> Rousseau's Rebuttal </h2>
+
+<p>But there was more to be said, and few could have opposed Hume with the forceful vehemence of Rousseau. Hume encouraged cooperation; Rousseau (in his life, as in his ideology) favored solitary freedom. Hume asserted that “the ages of refinement are both the happiest and most virtuous” But Rousseau looked to Sparta over Athens. Hume applauded the growing numbers of lettered men and women. Rousseau mused that the most highly educated are frequently the most immoral, and besides, the most roundly intolerable. Hume believed — and <em>believed</em> is the only word for it — that increasing “refinement” increased “humanity.” But Rousseau cast backwards to find “humanity” in the romantic freedom of nature, and proclaimed the gifts of “refinement” a dangerous corruption. Hume’s ideology might have encompassed the entire field of the debate on luxury, but Rousseau took this debate in a new dimension. Hume, Voltaire, and Fenelon all believed in <em>progress</em>, even if they disagreed over its exact direction. They believed that by guiding humanity in the right ways, progress could be achieved; humanity could be bettered; man could be <em>refined</em>. At core, all believed that luxury was a product of human agency, while Rousseau believed this luxury to have agency over us.</p>
+
+<p>Rousseau’s added dimension was time. Per Hume’s philosophy, he surmised, every age of humanity had been presented with its own species of luxury. Socrates’s contemporaries were contemplating whether to embrace <em>writing</em>. The Mesopotamians before them had pondered the necessity of plumbing. Add up all of these luxuries across the ages, and you derive the steady arrow of progress, pointing towards increasing refinement of the human being. And, conversely, if you strip these luxuries away from man, you reduce him to the so-called “state of nature,” of man devoid of society. Many thinkers had previously contemplated this “state of nature,” and had treated the society they meant to remove exactly as a set of “luxuries” which, like clothes, could be put on and taken off without fundamentally altering the human beneath. Rousseau endeavored to show that this path of gradually increasing refinement could not connect civilized Europe to the state of nature, and this began with demonstrating that the state of nature was far deeper than any of his contemporaries had supposed.</p>
+
+<p>“The philosophers have all felt the necessity of going back to a state of nature,” he writes, “but not one has got there.” Rousseau asserted that the luxuries one needed to strip away extended far beyond clothing, cooking, and the “pleasures of the court.” Just as the eloquent rhetoric of the Ancient Athenians was to them a luxury, so Rousseau conjectured that language itself was once a luxury to the human species. His savage wanders through the forest alone, “satisfying his hunger at the first oak, and slaking his thirst at the first brook; finding his bed at the foot of the tree which afforded him a repast.” (165) He would, Rousseau imagines, meet the same human perhaps twice in his lifetime. He would have no immediate need of conversing, other than with “inarticulate cries, plenty of gestures and some imitative sounds” which “must have been for a long time the universal language.” (185) He would likewise have little need for thinking about the future while “wholly wrapped up in the feeling of his present existence.” And even if he wanted to, he would have little capability: “Let it be considered how many ideas we owe to the use of speech, how far grammar exercises the understanding and facilitates its operations.” One cannot properly think, Rousseau asserts, without a language to undergird the thoughts. The foresight of his savage man is such that “he will improvidently sell you his cotton-bed in the morning, and come crying in the evening to buy it again, not having foreseen he would want it again the next night.” (171)<sup><a id="ffn5" href="#fn5" class="footnote">5</a></sup></p>
+
+<p>Rousseau’s savage has been stripped of so many societal ‘clothes’ that we scarcely recognize him as human, which is precisely Rousseau’s intention. There are three possible explanations for how humans in the state of nature might progressively become modern Europeans, and Rousseau has designed his savage to heavily favor one these explanations.</p>
+
+<p>On the first end of the spectrum lies the absolute individualist who holds that a sufficiently clever group of homo sapiens could, at any point in history, have erected a society as advanced as our own; no matter if they have no books, no matter if they have no language — the sufficiently clever homo sapien can hoist himself up with the force of his own will. Thomas Hobbes probably came closest to this extreme viewpoint; but in his imagined state of nature, humans could both reason and converse, and from here needed only coordination to erect society. If one begins with Rousseau’s state of nature, this explanation of progress becomes impossible to defend. “Were we to suppose savage man as trained in the art of thinking as philosophers make him,” Rousseau writes,”…what advantage would accrue to the species from all such metaphysics, which could not be communicated by one to another, but must end with him who made them?” (171) We can scarcely imagine a savage whose foresight barely extended to the next day designing both a political philosophy and a language with which to convey it. </p>
+
+<p>A more reasonable explanation suggests that humans continually drive society forward toward “progress.” Newton said that he advanced science only by “standing on the shoulders of giants.” In the same manner, everyone from the quantum physicist to the child learning to read stands atop the mountain of <em>society</em>, a mountain built of thousands and thousands of stepping stones, laid across thousands and thousands of years. Each of these stepping stones, from language, to writing, to the opera, was initially a novel species of luxury. As the luxuries accrue, subsequent generations come to depend on them, and are enabled to drive society to further heights. This is the pervasive theory of <em>progress</em> advanced by Hume and other theorists of luxury. Humans, with society’s help, are continually refining themselves, driving the vehicle of society onward and upward, towards that “increase in humanity.”</p>
+
+<p>Rousseau sought to refute this theory of human-driven progress by arguing that the earliest and most massive steps humanity took towards progress did not align with human self-interest. Consider agriculture: “What man among them would be so absurd as to take the trouble of cultivating a field, which might be stripped of its crop by the first comer, man or beast, that might take a liking to it; and how should each of them resolve to pass his life in a wearisome labour, when, the more necessary to him the reward of his labour might be, the surer he would be of not getting it?” (171) In his natural state, savage man finds an abundance of food easily available, and passes the rest of his time in rest. Rousseau hypothesizes that nothing could have induced man to take up agriculture but a society which had outgrown its food supply. The natural state remains infinitely preferable to a “life (of) wearisome labor.” Even the invention of government was, Rousseau argues, nothing but a trick perpetrated on the poor by the rich: “the poor had nothing but their freedom to lose” while “the rich (having also) their possessions, it was much easier to harm them, and therefore more necessary for them to take precautions against it.” (193) Savage man, in his natural state, had little reason for violence, and no property to protect. Only this artificial institution had made necessary the establishment of yet more artificial chains.</p>
+
+<p>The first of these theories of progress places all the power of progress with the individual. The second wavers slightly; it still grants the individual complete agency over the direction of progress, but allows that she owes a great deal to those societal stepping stones underfoot. After endeavoring to refute the first two, Rousseau outlined a third possibility: perhaps, he conjectured, society is not a sequence of stepping stones, but a vast, invisible current, in which we’re all immersed, and from which we can’t escape. Perhaps the “increase in humanity” we believe ourselves to be progressing towards lies not ahead but far behind, back even when the roaring current was only a trickling stream. This is Rousseau’s grim prognosis: we think that we humans form society, when in fact society forms us.</p>
+
+<p>“There is, I feel, an age at which the individual man would wish to stop (aging);” Rousseau writes, “you are about to inquire about the age at which you would have liked your whole species to stand still.” (164) Rousseau paints <em>societal evolution</em> not as a deliberate path taken towards a beneficial end, but as a current, like the current of time, which catches us indifferently and compels us forward even as we pine for the past. In the state of nature, humans were happy and free. The first waves of luxury perhaps made them even happier, uniting solitary men and women into families, igniting “conjugal love and paternal affection” and gracing them with a language for self-expression. But the current continued. Families were subsumed beneath oppressive kingdoms. Language became necessary to <em>conceal</em> one’s self-interest: “To be and to appear to be became two totally different things; and from this distinction sprang insolent pomp and cheating trickery.” (190) Society continues to evolve, no longer for our sake so much as for its own. The chains of successive luxuries continue to proliferate and to tighten, disfiguring naturally free and happy man into a creature of society who knows nothing of freedom and little of happiness. Worse yet, Rousseau gives no means of escape from this current; the life of society, indifferent to us as we are to our cells, will age until it finally collapses.<sup><a id="ffn6" href="#fn6" class="footnote">6</a></sup></p>
+
+<p> Rousseau darkly predicted that as society further developed, what remained of individual liberty would gradually be subsumed in further service of the collective whole. “Despotism, raising up its hideous head and devouring everything that remained sound and untainted in any part of the State, would at length trample on both the laws and the people, and establish itself on the ruins of the republic… At length, the monster would swallow up everything and the people would no longer have chiefs or laws, but only tyrants.” With this, the life-cycle of society would restart, for “there is here a complete return to the law of the strongest, and so to a new state of nature.” (200) Those humans who survived the “law of the strongest” would once again live freely atop the ruins of civilization, until the inescapable currents of progress compelled them again towards the society that had just collapsed.</p>
+<h2> In the Present </h2>
+<p>What is to be made of the indisputable fact that, centuries after Rousseau’s grim prophecy, our society is, by many objective measures, more peaceful and prosperous than at any point in history? We’ve now survived (if improbably) two world wars, and myriad revolutions of the oppressed poor, who now enjoy electricity, plumbing, and a higher living standard than medieval kings. Some of Rousseau’s musings nowadays seem inane. “Electricity” he wrote “will, perhaps, be forever the despair of real philosophers.” Maxwell decisively cracked that puzzle over a century ago, and his successors are now patiently unravelling quantum mechanics and even artificial intelligence, with no signs of stopping. Barring a complete inability to react to climate change, the human species seems poised to continue well into the foreseeable future.</p>
+
+<p>Rousseau’s musings on the history of societies led him to the frightening conclusion that the levers of progress lie outside of human control. He didn’t just see the Trojan horse; he looked beyond it and saw the gods — vast powers twiddling with our fates indifferently. He saw an unstoppable tide, rising, falling, enlightening, collapsing, all without a hint of human agency.</p>
+
+<p>Perhaps the absence of these tides in our own recent history suggest that Rousseau underestimated the power of human intervention. Society may have an evolutionary inertia of its own, but <em>we</em> are the drivers and its 7 billion pairs of discordant yet mutually harmonious eyes. The Ancient Greeks continue to bear new gifts, from the latest smartphone to our upcoming vaccine. Some may be chains, but some may be building blocks towards society’s next evolution. The only question is: evolution towards what? Even if we are witting contributors to the super-human agency of society, towards what progress are we contributing? Hume would tell us that progress can only mean an “increase in humanity.” Rousseau counsels the direct opposite, warning that we left our humanity behind shortly after entering the raging current. As we enter an era of cyborgs and artificial intelligence, poised upon a more potent luxury than our ancestors ever knew, the question is more pertinent than ever before: who shall we believe?</p>
+
+<ol id="footnotes">
+	<li id="fn1">Archbishop Fenelon, Qtd. in Lecture 4. <a href="#ffn1">&#x21A9;&#xFE0E;</a></li>
+	<li id="fn2">In his later work <em>Candide</em>, Voltaire revises many of these sentiments. <a href="#ffn2">&#x21A9;&#xFE0E;</a></li>
+	<li id="fn3">Voltaire. “The Worldling.” (1736) <em>Commerce, Culture, and Liberty: Readings on Capitalism before Adam Smith</em>, Edited by Henry Clark, 2003. <a href="#ffn3">&#x21A9;&#xFE0E;</a></li>
+	<li id="fn4">David Hume. “On Refinement in the Arts and Sciences.” (1752) <em>Essays Moral, Political, and Literary</em>. Edited by Eugene Miller, 1985. <a href="#ffn4">&#x21A9;&#xFE0E;</a></li>
+	<li id="fn5">Jean-Jacques Rousseau. “Discourse on the Origins of Inequality.” (1754) <em>The Social Contract and Discourses by Jean-Jacques Rousseau, translated with an Introduction by G.D. H. Cole</em> (London and Toronto: J.M. Dent and Sons, 1923). 5/1/2020. &lt;https://oll.libertyfund.org/titles/638&gt; <a href="#ffn5">&#x21A9;&#xFE0E;</a></li>
+	<li id="fn6">In <em>The Social Contract</em>, Rousseau would offer a strategy for containing and restraining the evolution of society by imitating the government of Geneva. It remains unclear, however, how much of this later ideology was inspired by his <em>Discourses</em>, and how much was motivated by a desire to regain good terms with the government of Geneva, from which he had been exiled. <a href="#ffn6">&#x21A9;&#xFE0E;</a></li>
+</ol>
+
+
+<!--
+===========================================================================================================================================
+--------------------------------------------------- Thanks for writing for us. ------------------------------------------------------------
+-->
+			</div>
+			<div id="STANDARD_PAGE" style="display:none;"> 
+				<div id="pageNUM" style="display:none;" class="page" class="slide-in">
+					<div class="page_content">
+					<div class="button"  onclick="flip_back('NUM')"><img src="/support/left_arrow.png" alt="Left Arrow" draggable="false" style="width:25px;height:25px;"></div>
+						<div class="lines" id="NUM_left">
+
+						</div>
+						<div class="spacer"></div>
+						<div class="lines" id="NUM_right">
+			
+						</div>
+					<div class="button" onclick="flip_forward('NUM')">
+						<img src="/support/right_arrow.png" draggable="false" alt="Right Arrow" style="width:25px;height:25px;">
+					</div>
+					</div>
+					<div class="status_blob"><div class="page_status" id="page_statusNUM" style="width:0%"></div></div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
+<!--Icons made by "https://www.flaticon.com/authors/smashicons" Smashicons from https://www.flaticon.com/.

@@ -1,0 +1,610 @@
+<html>
+<head>
+<title>Orange Cipher</title>
+<link rel="stylesheet" href="JSTUFF/Animation.css">
+<script type="text/javascript" src="ReplaceChar.js"></script>
+<style>
+body{
+background-color: #15457c;
+}
+#body{
+height: 100%;
+width: 100%;
+  background: -webkit-linear-gradient(#15457c 0%, #737373 100%);
+  display: none;
+}
+#choose{
+width: 100%;
+height: 10%;
+border: 5px solid #e96c2d;
+background: #e96c2d;
+color: #15457c;
+font-size: 50px;
+border-radius: 50px 50px 0px 0px;
+text-align: center;
+}
+#inputbox{
+width: 100%;
+height: 40%;
+border: 5px solid #e96c2d;
+background: white;
+color: #15457c;
+font-size: 50px;
+}
+#input{
+width: 100%;
+height: 100%;
+border: 0px solid #e96c2d;
+background: white;
+color: #15457c;
+font-size: 50px;
+}
+#output{
+width: 100%;
+height: 40%;
+border: 5px solid #e96c2d;
+background: black;
+color: #e96c2d;
+font-size: 50px;
+overflow: scroll;
+}
+#input2{
+width: 90%;
+height: 100%;
+border: 5px solid #e96c2d;
+background: black;
+color: #e96c2d;
+font-size: 50px;
+overflow: scroll;
+
+}
+#seedkey{
+width: 10%;
+height: 100%;
+border: 5px solid #e96c2d;
+background: black;
+color: #e96c2d;
+font-size: 30px;
+overflow: scroll;
+float: right;
+}
+#new{
+width: 100%;
+height: 10%;
+border: 5px solid #e96c2d;
+background: #e96c2d;
+color: #15457c;
+font-size: 50px;
+text-align: center;
+border-radius: 0px 0px 50px 50px;
+}
+#buttonbig{
+width: 100%;
+height: 30%;
+border: 5px solid #e96c2d;
+background: #e96c2d;
+color: #15457c;
+font-size: 50px;
+text-align: center;
+border-radius: 0px 0px 0px 0px;
+}
+#buttonbigtwo{
+width: 100%;
+height: 30%;
+border: 5px solid #e96c2d;
+background: #e96c2d;
+color:#15457c ;
+font-size: 50px;
+text-align: center;
+border-radius: 0px 0px 0px 0px;
+display:none;
+}
+#newperson{
+height: 100%;
+width: 100%;
+background: black;
+border-radius: 50px;
+display: none;
+border: 5px solid #e96c2d;
+overflow: hidden;
+}
+#chooseperson{
+height: 100%;
+width: 100%;
+background: black;
+border-radius: 50px;
+display: none;
+border: 5px solid #e96c2d;
+overflow: auto;
+}
+#person1{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person2{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person3{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person4{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person5{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person6{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person7{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+
+#person8{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person9{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person10{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person11{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person12{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person13{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person14{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person15{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person16{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person17{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person18{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person19{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#person20{
+	height: 20%;
+	width: 100%;
+	background-color: #e96c2d;
+	color: #15457c;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#dletit{
+	height: 20%;
+	width: 100%;
+	background-color:#15457c ;
+	color: #e96c2d;
+	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+text-align:center;
+}
+#readit{
+height: 100%;
+width: 100%;
+background: beige;
+border-radius: 50px;
+display: none;
+border: 5px solid #e96c2d;
+overflow: scroll;
+color: #15457c;
+font-family: sans-serif;
+font-size: 30px;
+text-align: center;
+}
+#text{
+	font-size: 50px;
+	color: #e96c2d; 
+	text-align: center;
+	height: 30%;
+}
+#cloak{
+	width: 100%;
+	height: 40%;
+}
+#starter{
+	width:100%;
+	height: 100%;
+	background-color: black;
+	border-radius: 50px;
+	overflow: hidden;
+}
+#logo{
+	background-image: url('logo.png');
+	width: 100%;
+	height: 60%;
+	  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top; 
+}
+#introtext{
+	font-size: 50px;
+	color: #e96c2d; 
+	text-align: center;
+	height: 10%;
+	width: 100%;
+}
+#masterpass{
+	font-size: 50px;
+	color: #e96c2d; 
+	text-align: center;
+	height: 10%;
+	width: 100%;
+	background: beige;
+}
+#introenter{
+	font-size: 50px;
+	color: #e96c2d; 
+	text-align: center;
+	height: 30%;
+	width: 100%;
+	background: black;
+}
+</style>
+<script src="PRNG/chance.js"></script> 
+<script src="PRNG/uheprng.js"></script> 
+<script src="JSTUFF/JSON.js"></script> 
+<script src="JSTUFF/JQUERY.js"></script> 
+<script src="JSTUFF/jstorage.js"></script> 
+<script src="MakeKey.js"></script>
+<script type="text/javascript">
+ var enorde=true;
+ 			var percount="Please Choose a person to correspond with, or create a new one by clicking below.";
+          var key="";        
+var ren=23;
+var ret="d?".indexOf("?");
+setInterval(main,10);
+var oneiftrue=true;
+var  plaintext="qwertyuiopasdfghjklzxcvbnm";
+var ciphertext="qwertyuiopasdfghjklzxcvbnm";
+var ty=plaintext.charAt(31);
+function main() {
+  var input=document.getElementById('input').value;
+
+  input=input.toLowerCase();
+
+  //input=input.trim();
+  //input=input.replace(/[\n\r]/g, ' ');
+  document.getElementById('input').value=input;
+  first=input.charAt(0);
+  //key=ciphertext;
+  
+  var checkindex= plaintext.indexOf(first);
+  if(checkindex>-1){
+  enorde=false;
+  
+  //input=removeinval(input);
+  //alert(key);
+  document.getElementById('input').value=input;
+  //alert(percount);
+ var keyt=key.substr(percount*1000, 1000)
+//alert(keyt);
+var percountstr=percount.toString();
+var heyjude=percountstr.indexOf('0');
+      var inputafterinval=removeinval(input);
+      var ciphernew=encipher(keyt, inputafterinval);
+      if (percount<10){
+      	if (heyjude==-1){
+      	//percount="0"+percount;
+      	}
+      }
+      ciphernew="#"+percount+ciphernew;
+      var ifover=ciphernew.length;
+      if(keyt!=""){
+      if (ifover>=keyt.length){
+      	if(oneiftrue==true){
+      alert ("This message is longer than your key length. Sending it may make the contents less secure.");
+      oneiftrue=false;
+      	}
+      }
+      }
+      document.getElementById('output').innerHTML=ciphernew;
+      
+
+
+  }
+  else {
+  enorde=true;
+  var secer=input.substr(1,2);
+  //alert(secer);
+  secer=parseInt(secer)
+  //alert(key);
+  //alert(secer);
+  var keyt=key.substr(secer*1000, 1000)
+  //alert(keyt)
+  input=input.replace(secer, "");
+  input=input.replace("#", " ");
+input=input.trim();
+      var deciphered=decipher(keyt, input);
+      deciphered=putinval(deciphered);
+      document.getElementById('output').innerHTML=deciphered;
+      
+  }
+
+}
+
+
+function encipher(key,input) {
+var k=-1;
+key=key.toLowerCase();
+input=input.toLowerCase();
+var ciphernew="";
+  for (var i = 0; i < input.length; i++) {
+  k++;
+  if(k>key.length){
+  k=1;
+  }
+  
+      var keyati=key.charAt(k);
+      var keypos=ciphertext.indexOf(keyati)
+      var inpati=input.charAt(i);
+      var inppos=ciphertext.indexOf(inpati)
+      var cipher=inppos+keypos;
+      cipher=mmod(26, cipher);
+      var niti=ciphertext.charAt(cipher);
+      ciphernew=ciphernew+niti;
+  }
+//ciphernew="#"+ciphernew;
+return ciphernew;
+}
+
+function decipher(key,input) {
+var ciphernew="";
+key=key.toLowerCase();
+input=input.toLowerCase();
+var k=-1;
+//input=input.replace("#", "");
+//alert(input);
+  for (var i = 0; i < input.length; i++) {
+ k++;
+  if(k>key.length){
+  k=1;
+  }
+  
+      var keyati=key.charAt(k);
+      var keypos=ciphertext.indexOf(keyati)
+      var inpati=input.charAt(i);
+      var inppos=ciphertext.indexOf(inpati)
+      var cipher=inppos-keypos;
+      cipher=mmod(26, cipher);
+      var niti=ciphertext.charAt(cipher);
+      ciphernew=ciphernew+niti;
+
+  }
+
+return ciphernew;
+}
+function mmod(n, m) {
+        return ((m % n) + n) % n;
+}
+
+</script>
+
+<script type="text/javascript" src="KeyGen.js"></script>
+
+</head>
+<div id="starter">
+	<div id="logo"></div>
+	<div id="introtext" > Please enter your Master Password.</div>
+	<input type="password" id="masterpass" onkeypress="searchKeyPress(event);" ></input>
+	<div id="introenter" onclick="enterpass()">Enter</div>
+</div>
+<body>
+<div id='body'>
+<div id="choose" onclick="loader();">Choose Person</div>
+<div id="inputbox">
+<textarea id="input" placeholder="Enter your text here:"></textarea>
+</div>
+<div id="output" onclick="readable()"></div>
+<div id="new" onclick="newperson()">New Correspondent</div>
+</div>
+
+<div id="newperson" > 
+<div id="text"></div>
+<div id="cloak">
+<textarea id="input2" ></textarea><textarea id="seedkey" class="seedkey" name="seedkey" ></textarea>
+</div>
+<button id="buttonbig" width="100%" background="white"  onclick="pusher1()">Click Here For New Key</button>
+<button id="buttonbigtwo" width="100%" background="white"  onclick="pusher2()">Click Here To Paste One</button>
+</div>
+
+<div id="readit" onclick="readable()"> 	</div>
+<div id="chooseperson">
+
+	<div id="person1" onclick="picker(1)"> </div>
+	<div id="person2" onclick="picker(2)"></div>
+	<div id="person3" onclick="picker(3)"></div>
+	<div id="person4" onclick="picker(4)"></div>
+	<div id="person5" onclick="picker(5)"></div>
+	<div id="person6" onclick="picker(6)"></div>
+	<div id="person7" onclick="picker(7)"></div>
+	<div id="person8" onclick="picker(8)"></div>
+	<div id="person9" onclick="picker(9)"></div>
+	<div id="person10" onclick="picker(10)"></div>
+	<div id="person11" onclick="picker(11)"></div>
+	<div id="person12" onclick="picker(12)"></div>
+	<div id="person13" onclick="picker(13)"></div>
+	<div id="person14" onclick="picker(14)"></div>
+	<div id="person15" onclick="picker(15)"></div>
+	<div id="person16" onclick="picker(16)"></div>
+	<div id="person17" onclick="picker(17)"></div>
+	<div id="person18" onclick="picker(18)"></div>
+	<div id="person19" onclick="picker(19)"></div>
+	<div id="person20" onclick="picker(20)"></div>
+
+	<div id="dletit" onclick="deleter()">Delete Contacts.</div>
+
+</div>
+<!--<button onclick="main()">Click here</button>-->
+</body>
+</html>
