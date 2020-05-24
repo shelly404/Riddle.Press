@@ -27,7 +27,7 @@
 			            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 			        }
 			    };
-			    evaluateClient(){
+			    function evaluateClient(){
 				    if(isMobile.any()){
 					    document.getElementById("riddle").innerHTML="R";
 						var script = document.createElement('script');
@@ -43,6 +43,7 @@
 						fileref.href = "/support/mobile_style.css";
 						document.getElementsByTagName("head")[0].appendChild(fileref)		    
 						}
+						
 						unleash_the_kraken()
 				}
 		</script>
