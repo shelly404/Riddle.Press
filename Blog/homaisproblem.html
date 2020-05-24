@@ -28,6 +28,7 @@
 			        }
 			    };
 			    if(isMobile.any()){
+				    document.getElementById("riddle").innerHTML="R";
 					var script = document.createElement('script');
 					script.onload = function () {
 					    console.log("Welcome, mobile users of the world. We're preparing the mobile site.")
@@ -103,7 +104,7 @@ Flaubert, Gustave. Madame Bovary. Penguin, 1992.
 			<div id="STANDARD_PAGE" style="display:none;"> 
 				<div id="pageNUM" style="display:none;" class="page" class="slide-in">
 					<div class="page_content">
-					<div class="button"  onclick="flip_back('NUM')"><img src="support/left_arrow.png" alt="Left Arrow" draggable="false" style="width:25px;height:25px;"></div>
+					<div class="button"  onclick="flip_back('NUM')"><img src="/support/left_arrow.png" alt="Left Arrow" draggable="false" style="width:25px;height:25px;"></div>
 						<div class="lines" id="NUM_left">
 
 						</div>
@@ -112,7 +113,7 @@ Flaubert, Gustave. Madame Bovary. Penguin, 1992.
 			
 						</div>
 					<div class="button" onclick="flip_forward('NUM')">
-						<img src="support/right_arrow.png" draggable="false" alt="Right Arrow" style="width:25px;height:25px;">
+						<img src="/support/right_arrow.png" draggable="false" alt="Right Arrow" style="width:25px;height:25px;">
 					</div>
 					</div>
 					<div class="status_blob"><div class="page_status" id="page_statusNUM" style="width:0%"></div></div>
