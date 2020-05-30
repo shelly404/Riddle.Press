@@ -141,6 +141,7 @@ body{
 				color: #04a8e3;
 				position: fixed;
 			    top: 0;
+			    display: block;
 				width: 100%;
 				background:-webkit-linear-gradient(#063c58 0%, rgba(6,62,90,0.5) 100%);
 			}
