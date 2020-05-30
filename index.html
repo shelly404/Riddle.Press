@@ -151,7 +151,15 @@
 				border-radius: 10px;
 				margin: 20vh 4px 20vh 5px;
 			}
-			
+			#riddle_head{
+				font-size: 8vh;
+				font-variant:small-caps;
+				color: #04a8e3;
+				display: none;
+				position: fixed;
+			    top: 0;
+				width: 100%;
+			}
 			.blurb{
 				text-align: left;
 				font-size: larger;
@@ -288,7 +296,38 @@
 				
 				
 			})
-			
+			var isMobile = {
+			        Android: function() {
+			            return navigator.userAgent.match(/Android/i);
+			        },
+			        BlackBerry: function() {
+			            return navigator.userAgent.match(/BlackBerry/i);
+			        },
+			        iOS: function() {
+			            return navigator.userAgent.match(/iPhone|iPod/i);
+			        },
+			        Opera: function() {
+			            return navigator.userAgent.match(/Opera Mini/i);
+			        },
+			        Windows: function() {
+			            return navigator.userAgent.match(/IEMobile/i);
+			        },
+			        any: function() {
+			            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+			        }
+			    };
+		    if(isMobile.any()){
+				var script = document.createElement('script');
+				script.onload = function () {
+				    console.log("Welcome, mobile users of the world. We're preparing the mobile site.")
+				};
+				
+				var fileref = document.createElement("link");
+				fileref.rel = "stylesheet";
+				fileref.type = "text/css";
+				fileref.href = "/support/index_mobile.css";
+				document.getElementsByTagName("head")[0].appendChild(fileref)		    
+				}
 		</script>
 		
 	</head>
@@ -310,6 +349,7 @@
 <!-- 				<div class="weeklysegway"> About </div> -->
 
 				<div id = "weeklysegway" style="height:0vh;"></div>
+				<div id = "riddle_head"> Riddle </div>
 				<div id="weekly">
 					<img src="comic.gif" style="width:80%;">
 					<p>Something to make you laugh and something to make you think, every Tuesday. </p>
