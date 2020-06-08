@@ -68,6 +68,18 @@
 				font-style: italic;
 				margin:2vh;
 			}
+			#comiccontrols{
+				display:flex;
+				width: 100%;
+				align-items:center;
+				justify-content: space-around;
+				padding: 0px;
+				margin: 0px;
+			}
+			#comiccontrols *{
+				margin: 100px;
+				padding: 0px;
+			}
 			.chapter{
 				padding:2vh;
 				border-radius: 45px;
@@ -137,9 +149,9 @@
 			
 			#weekly{
 				flex-basis: auto;
- 				width: 94%;
+ 				width: 78vw;
  				min-height: 60vh;
-				background:beige;
+				background:white;
 				display: flex;
 				flex-direction: column;
 				flex-grow: 1;
@@ -197,6 +209,11 @@
 				color: white;
 				padding:2vh;
 			}
+			.button{
+				padding: 0px;
+				background: blue;
+				width: auto;
+			}
 			h1{
 				font-size: 10vh;
 			}
@@ -215,8 +232,8 @@
 			}
 		</style>
 		<script type='text/javascript'>
-			
-			
+			var current_comic_number = 2;
+			var highest_comic_number = 2;
 			
 			$(document).ready(function(){
 				
@@ -328,6 +345,28 @@
 				fileref.href = "/support/index_mobile.css";
 				document.getElementsByTagName("head")[0].appendChild(fileref)		    
 				}
+				
+			function change_comic(x){
+				if(x=="back"){
+					new_number = current_comic_number-1
+					if(new_number<0){
+						return false
+					}
+					document.getElementById('comic_holder').src = "comics/Riddle_"+new_number+".png";
+				}
+				if(x=="forward"){
+					new_number = current_comic_number+1
+					if(new_number>highest_comic_number){
+						return false
+					}
+					document.getElementById('comic_holder').src = "comics/Riddle_"+new_number+".png";
+				}
+				if(x=="random"){
+					new_number = Math.floor((Math.random() * highest_comic_number));
+					document.getElementById('comic_holder').src = "comics/Riddle_"+new_number+".png";
+				}
+				current_comic_number=new_number;
+			}
 		</script>
 		
 	</head>
@@ -351,7 +390,11 @@
 				<div id = "weeklysegway" style="height:0vh;"></div>
 				<div id = "riddle_head"> Riddle </div>
 				<div id="weekly">
-					<img src="comic.gif" style="width:80%;">
+					<div id='comiccontrols'>
+						<img src="support/left_arrow.png" onclick="change_comic('back')" alt="Left Arrow" draggable="false" style="width:25px;height:25px; margin:0px;">
+						<img id="comic_holder" src="comics/Riddle_2.png" draggable="false" style="flex-basis:80%; width:80%; margin:0px;" onclick="change_comic('random')">
+						<img src="support/right_arrow.png" onclick="change_comic('forward')" draggable="false" alt="Right Arrow" style="width:25px;height:25px; margin:0px;">
+					</div>
 					<p>Something to make you laugh and something to make you think, every Tuesday. </p>
 				
 				</div>
