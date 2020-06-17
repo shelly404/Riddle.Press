@@ -160,7 +160,7 @@
 				text-align: center;
 				border: 1px solid rgba(0, 100, 0, 0);
 				border-radius: 10px;
-				margin: 20vh 4px 20vh 5px;
+				margin: 20vh 4vh 20vh 4vh;
 			}
 			#riddle_head{
 				font-size: 8vh;
@@ -179,6 +179,7 @@
 				flex-basis:0;
 				flex-grow:1;
 				overflow:scroll;
+				padding: 2vw;
 			}
 			.showpic{
 				background-color:blue;
@@ -188,10 +189,12 @@
 				background-repeat: no-repeat; /* Do not repeat the image */
 				background-size: cover; 			
 				}
+/*
 			.blurb * {
 				margin-left: 2vw;
 				margin-right: 2vw;
 			}
+*/
 			
 			#weekly * {
 			    margin: 20px;
@@ -216,6 +219,12 @@
 			}
 			h1{
 				font-size: 10vh;
+			}
+			h2{
+				font-size: 7vh;
+			}
+			h3{
+				font-size: 5vh;
 			}
 			p{
 				font-size: 4vh;
@@ -348,22 +357,42 @@
 				
 			function change_comic(x){
 				if(x=="back"){
+					document.getElementById('forwardbutton').style.opacity='1';
 					new_number = current_comic_number-1
 					if(new_number<0){
 						return false
 					}
 					document.getElementById('comic_holder').src = "comics/Riddle_"+new_number+".png";
+					if(new_number==0){
+						console.log("We've hit comic zero. Wiping out the back button.")
+						document.getElementById('backbutton').style.opacity='0.5';
+					}
 				}
 				if(x=="forward"){
+					document.getElementById('backbutton').style.opacity='1';
 					new_number = current_comic_number+1
 					if(new_number>highest_comic_number){
 						return false
 					}
 					document.getElementById('comic_holder').src = "comics/Riddle_"+new_number+".png";
+					if(new_number==highest_comic_number){
+						console.log("We've hit the latest comic. Wiping out the forward button.")
+						document.getElementById('forwardbutton').style.opacity='0.5';
+					}
 				}
 				if(x=="random"){
 					new_number = Math.floor((Math.random() * highest_comic_number));
 					document.getElementById('comic_holder').src = "comics/Riddle_"+new_number+".png";
+					document.getElementById('backbutton').style.opacity='1';
+					document.getElementById('forwardbutton').style.opacity='1';
+					if(new_number==highest_comic_number){
+						console.log("We've hit the latest comic. Wiping out the forward button.")
+						document.getElementById('forwardbutton').style.opacity='0.5';
+					}
+					if(new_number==0){
+						console.log("We've hit comic zero. Wiping out the back button.")
+						document.getElementById('backbutton').style.opacity='0.5';
+					}
 				}
 				current_comic_number=new_number;
 			}
@@ -382,6 +411,7 @@
 				<div class = "chapter" id = "weeklychapter" style="background: #063c58">The Weekly</div>
 				<div class = "chapter" id = "presschapter" >Press</div>
 				<div class = "chapter" id = "projectschapter" >Projects</div>
+				<div class = "chapter" id = "aboutchapter" >About</div>
 			</div>
 			
 			<div id="reader">
@@ -391,21 +421,20 @@
 				<div id = "riddle_head"> Riddle </div>
 				<div id="weekly">
 					<div id='comiccontrols'>
-						<img src="support/left_arrow.png" onclick="change_comic('back')" alt="Left Arrow" draggable="false" style="width:25px;height:25px; margin:0px;">
+						<img id='backbutton' src="support/left_arrow.png" onclick="change_comic('back')" alt="Left Arrow" draggable="false" style="width:25px;height:25px; margin:0px;">
 						<img id="comic_holder" src="comics/Riddle_2.png" draggable="false" style="flex-basis:80%; width:80%; margin:0px;" onclick="change_comic('random')">
-						<img src="support/right_arrow.png" onclick="change_comic('forward')" draggable="false" alt="Right Arrow" style="width:25px;height:25px; margin:0px;">
+						<img id = 'forwardbutton' src="support/right_arrow.png" onclick="change_comic('forward')" draggable="false" alt="Right Arrow" style="width:25px;height:25px; margin:0px; opacity:0.5;">
 					</div>
-					<p>Something to make you laugh and something to make you think, every Tuesday. </p>
 				
 				</div>
 								
-		<div class="segway" id="presssegway"> Off the Press </div>
+		<div class="segway" id="presssegway"> Off the Press <p> Friendly writings from friendly folks.</p></div>
 					
 				<div class="abstract" onclick="document.location='blog/homaisproblem.html'"> 
 					
 					<div class="blurb">
 						<h1> The Homais Problem</h1>
-						<h2> The Enduring Moral of Flaubert's <i>Madame Bovary</i></h2>
+						<p> The Enduring Moral of Flaubert's <i>Madame Bovary</i></p>
 					</div>
 					<div class="showpic" style="background-image:url('visuals/beach.jpeg');">
 					</div>
@@ -416,7 +445,7 @@
 					<div class="showpic" style="background-image:url('visuals/lake.jpeg');"></div>
 					<div class="blurb">
 						<h1> Rousseau's Conjecture </h1> 
-						<h2> We think that humans form society. To what extent does society form us? </h2>
+						<p> We think that humans form society. To what extent does society form us? </p>
 					</div>
 				</div>
 
@@ -431,6 +460,16 @@
 						</div>
 					</div>
 					
+		<div class="segway" id="aboutsegway"> What is Riddle? <p> Who are we anyways?</p> </div>
+		
+					<div class="abstract" onclick="document.location='blog/introducingriddle.html'"> 
+<!-- 						<div class="showpic" style="background-image:url('orange/logo.png');"></div> -->
+						<div class="blurb" style="margin:auto; text-align: center; height: auto;">
+							<p> Come for our comics, stay for our philosophy. </p>
+							<p> We are Riddle, a curious collection of curious fellows: cartoonists, philosophers, and Don Quixotes in residence.
+							<p><i>We have something new every Tuesday.</i></p>
+						</div>
+					</div>
 <!-- 					<div class="abstract"> </div> -->
 				
 <!--
