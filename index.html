@@ -98,10 +98,15 @@
 /* 				flex-direction: column; */
 				justify-content: left;
 				align-items: center;
-				overflow: scroll;
+				overflow-y: scroll;
+			    scrollbar-width: none; /* Firefox */
+			    -ms-overflow-style: none;  /* Internet Explorer 10+ */
 /* 				flex-wrap: wrap; */
 			}
-			
+			#reader::-webkit-scrollbar { /* WebKit */
+			    width: 0;
+			    height: 0;
+			}
 			#projects{
 				display: flex;
 				height: 100vh;
@@ -146,7 +151,7 @@
 				overflow: hidden;
 				margin: 4vh;
 			}
-			
+
 			#weekly{
 				flex-basis: auto;
  				width: 78vw;
@@ -180,6 +185,13 @@
 				flex-grow:1;
 				overflow:scroll;
 				padding: 2vw;
+				overflow-y: scroll;
+			    scrollbar-width: none; /* Firefox */
+			    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+			}
+			.blurb::-webkit-scrollbar { /* WebKit */
+			    width: 0;
+			    height: 0;
 			}
 			.showpic{
 				background-color:blue;
