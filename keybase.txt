@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/kincaid
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://riddle.press
+  * I am kincaid (https://keybase.io/kincaid) on keybase.
+  * I have a public key ASBiX-bCpRW93Ju4Ck4IPXLZpu2LL_VaFsCSB_EynmlkmAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120625fe6c2a515bddc9bb80a4e083d72d9a6ed8b2ff55a16c09207f1329e6964980a",
+      "host": "keybase.io",
+      "kid": "0120625fe6c2a515bddc9bb80a4e083d72d9a6ed8b2ff55a16c09207f1329e6964980a",
+      "uid": "00aa979486838b9253f361a30976ec19",
+      "username": "kincaid"
+    },
+    "merkle_root": {
+      "ctime": 1596922478,
+      "hash": "dedc0ac90921e6dd659243d01837f776d3541b78ee24d88db67fe8980a67c6f8cf620a6961962374039e6d2d7fa0e9759fba2c1e8a82aef4f95a06c22063981d",
+      "hash_meta": "1c6d48c7aab5f64e053e68d451a3c7dc7d2dd746778690f3f455573b616b6d00",
+      "seqno": 17227095
+    },
+    "service": {
+      "entropy": "KmVhOoYPl9Jr8V4PsHPg/G2r",
+      "hostname": "riddle.press",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.1"
+  },
+  "ctime": 1596922498,
+  "expire_in": 504576000,
+  "prev": "6b57e9650631c66f5709aa5ba30be0166c851b2d51253fba03382a0d24e1d644",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgYl/mwqUVvdybuApOCD1y2abtiy/1WhbAkgfxMp5pZJgKp3BheWxvYWTESpcCB8Qga1fpZQYxxm9XCapbowvgFmyFGy1RJT+6AzgqDSTh1kTEIBQYe/fuXjosQ9JM+QPxVYtnGD0E9B/CZmGqWgsb6OUqAgHCo3NpZ8RA3Z5bc3K0tXXVQoApu7tCHzWOq+c0zM6iWU1aBkLbpqudcIAjSSgU57rhqqMmvoFA16Nqob0YO/YcL0GxLzC6AqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIL+tfkgSGB2EgGhEkzkjJYH+zuHozFDGouuMtOIN2Ioao3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kincaid
+
+==================================================================
